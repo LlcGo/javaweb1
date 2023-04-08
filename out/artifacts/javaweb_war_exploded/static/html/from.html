@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form action="/result.jsp">
+    <p>用户名：<input type="text" name="username" placeholder="请输入用户名" ></p >
+    <p>密码：<input type="password" name="password" placeholder="请输入密码" ></p >
+    <p>职业：<input type="radio" name="job" value="student" >学生
+        <input type="radio" name="job" value="teacher">教师
+        <input type="radio" name="job" value="boss">老板</p >
+    <p>范围：<input type="range" name="range" min="0" max="100" value="30" ></p >
+    <p>数值：<input type="number" name="age"  maxlength="3" max="120"></p >
+    <p>邮件：<input type="email" name="mail" ></p >
+    <p>爱好：<input type="checkbox" name="hobbies" value="唱">唱
+        <input type="checkbox" name="hobbies" value="跳">跳
+        <input type="checkbox" name="hobbies" value="rap">rap
+        <input type="checkbox" name="hobbies" value="篮球" checked>篮球
+    </p >
+    <p>月薪登记：<select name="salary">
+        <option value="收入3000以下">收入3000以下</option>
+        <option value="收入3000-8000">收入3000-8000</option>
+    </select> </p >
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>
